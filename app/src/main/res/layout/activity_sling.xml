@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SlingActivity">
+    tools:context=".SlingActivity"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/txt_sling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/how_to_make_a_sling"
+        android:textColor="#F43636"
+        android:textSize="30sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <VideoView
+        android:id="@+id/videoSling"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_sling"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoSling"
+        android:layout_centerHorizontal="true"
+        android:text="USE\nTo make a sling, cut a piece of cloth, such as a pillowcase, about 40 inches square. Then cut or fold the square diagonally to make a triangle. Slip one end of the bandage under the arm and over the shoulder. Bring the other end of the bandage over the other shoulder, cradling the arm."
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"/>
+
+
+</RelativeLayout>
