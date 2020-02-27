@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TitleActivity"
+    android:padding="45dp">
+
+    <Button
+        android:id="@+id/btn_firstaid"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txt_todaynodie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="#C9F1ECEC"
+        android:onClick="openFirstAid"
+        android:text="@string/first_aid"
+        android:textColor="#F43636" />
+
+    <TextView
+        android:id="@+id/txt_todaynodie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/todaynodie"
+        android:textColor="#F43636"
+        android:textSize="50sp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textColor="#F43636"
+        android:layout_centerHorizontal="true"
+        android:text="@string/close_hospitals"
+        android:id="@+id/btn_closehospitals"
+        android:background="#C9F1ECEC"
+        android:layout_below="@+id/btn_firstaid"
+        android:layout_marginBottom="30dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"
+        android:layout_centerHorizontal="true"
+        android:text="@string/emergency_numbers"
+        android:id="@+id/btn_numbers"
+        android:layout_below="@+id/btn_closehospitals"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/first_aid_ki"
+        android:layout_below="@+id/btn_numbers"
+        android:contentDescription="@string/first_aid" />
+
+</RelativeLayout>

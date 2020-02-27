@@ -4,20 +4,96 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="45dp">
+    android:padding="30dp">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_sling"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:padding="23dp"
-        android:text="How to make a sling"
-        android:id="@+id/btn_sling"/>
+        android:text="@string/how_to_make_a_sling"
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"
+        android:onClick="openSling"/>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
         android:layout_below="@+id/btn_sling"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:padding="23dp"
+        android:layout_margin="20dp"
+        android:text="@string/drowning"
+        android:id="@+id/btn_drowning"
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_drowning"
+        android:layout_centerHorizontal="true"
+        android:padding="23dp"
+        android:layout_margin="20dp"
+        android:text="@string/hook_extraction"
+        android:id="@+id/btn_hook"
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_hook"
+        android:layout_centerHorizontal="true"
+        android:padding="23dp"
+        android:layout_margin="20dp"
+        android:text="@string/convulsive_crisis"
+        android:id="@+id/btn_convulsive"
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_convulsive"
+        android:layout_centerHorizontal="true"
+        android:padding="23dp"
+        android:layout_margin="20dp"
+        android:text="@string/nose_bleed"
+        android:id="@+id/btn_nose"
+        android:textColor="#F43636"
+        android:background="#C9F1ECEC"/>
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_nose"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="23dp"
+        android:text="@string/about_the_app"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn_nose"
+        android:layout_alignParentRight="true"
+        android:padding="23dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/settings"
+        android:id="@+id/btn_settings"
+        android:onClick="openSettings"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp" />
+
 
 </RelativeLayout>
