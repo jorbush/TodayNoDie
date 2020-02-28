@@ -31,9 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/videoSling"
         android:layout_centerHorizontal="true"
-        android:text="USE\nTo make a sling, cut a piece of cloth, such as a pillowcase, about 40 inches square. Then cut or fold the square diagonally to make a triangle. Slip one end of the bandage under the arm and over the shoulder. Bring the other end of the bandage over the other shoulder, cradling the arm."
-        android:textColor="#F43636"
-        android:background="#C9F1ECEC"/>
+        android:text="USE\nSlings can be used for many different injuries. They are most often used when you have a broken (fractured) or dislocated arm or shoulder."
+        android:layout_gravity="center_horizontal"/>
 
 
 </RelativeLayout>
